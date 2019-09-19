@@ -1,3 +1,262 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container{
+    width:100%;
+    margin:auto;
+}
+header nav {
+    display: flex;
+    
+}
+header nav  a {
+    text-decoration: none;
+    color : gray;
+    margin-top: 30px;    
+    border : 1px solid red 
+ 
+}
+ .logo {
+      margin: 20px 0 0 100px;
+      padding-top: 20px;
+    
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top:40px;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    background: white;
+    align-items: flex-start;
+    margin-left: 40%;
+    margin-bottom :40%;
+    border: 1px solid black;
+    margin-top :40px;
+
+}
+
+.IOD {
+    text-align: center;
+    font-size: 80px;
+}
+
+.mid {
+  display : flex;
+  margin-top : 20px;
+  padding: 20px;
+  width:100%;
+}
+
+.middle-img {
+    margin-top: 20px;
+    width:100%;
+    padding :20px;
+}
+
+.Mid {
+    display : flex;
+    margin-top: 20px;
+    padding:20px;
+}
 
 
+
+/* CSS For Tablet */
+
+
+@media (max-width :800px){
+ .container {
+     width :100%;
+     margin: auto;
+ }
+ header nav  {
+    width :100%;
+    display : flex;
+    border : 1px solid red;
+    /*flex-direction : row-reverse;*/
+    flex-direction :flex-end;
+    flex-grow : 1;
+    align-content : space-between;
+    flex:2;
+    
+}
+
+.logo {
+    margin: 10px auto 0; 
+    
+}
+
+header nav a {
+    
+}
+.circle {
+    display :none;
+}
+
+.middle-img1 {
+    width: 100%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top : 20px;
+}
+    
+
+
+
+
+
+
+/* CSS For Mobile */
+
+@media (max-width:500px){
+     
+.container {
+    width: 100%;
+    flex-wrap :wrap;
+    margin: auto;
+}
+header nav {
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+header nav a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom :1px solid black;
+   
+}
+header nav a:first-child {
+    border-bottom: 1px solid black;
+   
+}
+
+    .circle {
+        display: none;
+    }
+
+    .mid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .first {
+        margin-top : 10px;
+    }
+    .second {
+        margin-top : 20px;
+    }
+
+    .Mid {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top : 10px;
+    }
+
+    .services {
+        margin-top :10px;
+    }
+    
+    .Product {
+        margin-top :10px;
+    }
+    .Product h5{
+        margin-top :10px;
+    }
+    
+    
+    .Vision {
+        margin-top :10px;
+    }
+
+    
+    .Vision h5 {
+        margin-top :10px;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        margin-top : 20px;
+    }
+
+    .middle-img1 {
+        width: 100%;
+        border : 1px solid red ;
+
+    }
+}
