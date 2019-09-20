@@ -65,24 +65,33 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+/*                CSS FOR DESKTOP               */
+
 .container{
     width:100%;
     margin:auto;
 }
-header nav {
+
+nav {
+    display :flex;
+}
+.menuoptions {
     display: flex;
-    
+    flex-wrap: wrap;
+    width : 100%;
+    justify-content: space-around;
 }
 header nav  a {
     text-decoration: none;
     color : gray;
-    margin-top: 30px;    
-    border : 1px solid red 
- 
+    margin-top: 30px; 
+    justify-content: space-between;   
 }
- .logo {
+.logo {
       margin: 20px 0 0 100px;
       padding-top: 20px;
+      flex-direction : row-reverse;
     
 }
 .main {
@@ -137,33 +146,108 @@ button {
  .container {
      width :100%;
      margin: auto;
- }
- header nav  {
-    width :100%;
-    display : flex;
-    border : 1px solid red;
-    /*flex-direction : row-reverse;*/
-    flex-direction :flex-end;
-    flex-grow : 1;
-    align-content : space-between;
-    flex:2;
-    
 }
-
+ header nav  {
+    display : flex;
+    /*flex-direction : row-reverse;*/
+    flex-direction : column-reverse;
+}
+.menuoptions {
+    display : flex;
+    flex-wrap : wrap;
+}
+.menuoptions a {
+ justify-content: space-between;
+ padding :10px;
+ margin-top : 40px;
+}
 .logo {
     margin: 10px auto 0; 
-    
-}
-
-header nav a {
-    
+    justify-content: space-around;
 }
 .circle {
     display :none;
 }
-
 .middle-img1 {
     width: 100%;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top : 20px;
+}
+/* CSS For Mobile */
+
+@media (max-width:500px){
+ header nav  {
+     width : 100%;
+        
+}
+ .menuoptions {
+   display: flex;
+   width:100%;
+}
+.menuoptions a  {
+    width:100%;
+    border-bottom :1px solid black;
+    padding :20px;
+    flex-direction : column-reverse;
+    text-align: center;
+
+}
+
+.logo {
+    align-items: center;
+    border-bottom:1px solid black;
+    width:100%;
+    padding : 40px;
+}
+
+.menuoptions a:first-child {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.circle {
+    display: none;
+}
+
+.mid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first {
+    margin-top : 10px;
+}
+.second {
+    margin-top : 20px;
+}
+
+.Mid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top : 10px;
+}
+
+.services {
+     margin-top :10px;
+}
+    
+.Product {
+    margin-top :10px;
+}
+    
+.Product h5{
+     margin-top :10px;
+}
+    
+.Vision {
+    margin-top :10px;
+}
+
+.Vision h5 {
+    margin-top :10px;
 }
 
 .copyright {
@@ -171,92 +255,8 @@ header nav a {
     justify-content: center;
     margin-top : 20px;
 }
-    
 
-
-
-
-
-
-/* CSS For Mobile */
-
-@media (max-width:500px){
-     
-.container {
+.middle-img1 {
     width: 100%;
-    flex-wrap :wrap;
-    margin: auto;
 }
-header nav {
-    width: 100%;
-    flex-direction: column-reverse;
-}
-
-header nav a {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    border-bottom :1px solid black;
-   
-}
-header nav a:first-child {
-    border-bottom: 1px solid black;
-   
-}
-
-    .circle {
-        display: none;
-    }
-
-    .mid{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .first {
-        margin-top : 10px;
-    }
-    .second {
-        margin-top : 20px;
-    }
-
-    .Mid {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top : 10px;
-    }
-
-    .services {
-        margin-top :10px;
-    }
-    
-    .Product {
-        margin-top :10px;
-    }
-    .Product h5{
-        margin-top :10px;
-    }
-    
-    
-    .Vision {
-        margin-top :10px;
-    }
-
-    
-    .Vision h5 {
-        margin-top :10px;
-    }
-
-    .copyright {
-        display: flex;
-        justify-content: center;
-        margin-top : 20px;
-    }
-
-    .middle-img1 {
-        width: 100%;
-        
-
-    }
 }
